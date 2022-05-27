@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>rates</title>
+</head>
+<body>
+<form method="get" action="/money/rates/" >
+    <select name="select">
+        <option value="AUD">AUD</option>
+        <option value="AMD">AMD</option>
+        <option value="BGN">BGN</option>
+        <option value="UAH">UAH</option>
+        <option value="DKK">DKK</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="PLN">PLN</option>
+        <option value="JPY">JPY</option>
+        <option value="IRR">IRR</option>
+        <option value="ISK">ISK</option>
+        <option value="CAD">CAD</option>
+        <option value="CNY">CNY</option>
+        <option value="MDL">MDL</option>
+        <option value="NZD">NZD</option>
+        <option value="NOK">NOK</option>
+        <option value="RUB">RUB</option>
+        <option value="SGD">SGD</option>
+        <option value="KGS">KGS</option>
+        <option value="KZT">KZT</option>
+        <option value="TRY">TRY</option>
+        <option value="GBP">GBP</option>
+        <option value="CZK">CZK</option>
+        <option value="SEK">SEK</option>
+        <option value="CHF">CHF</option>
+    </select>
+    <button type="submit">отправить</button>
+    <!--/*@thymesVar id="rates" type="com.example.money.model.Rates"*/-->
+    <div th:if="${rates}">
+        <div th:text="${rates.getDate()}"></div>
+        <div th:text="${rates.getCurName()}"></div>
+        <div th:text="${rates.getCurAbbreviation()}"></div>
+        <div th:text="${rates.getCurOfficialRate()}"></div>
+        <div th:text="${rates.getCurScale()}"></div>
+    </div>
+</form>
+</body>
+</html>

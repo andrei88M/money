@@ -1,0 +1,31 @@
+package com.example.money.model;
+
+public enum CurAbbreviation {
+    AUD,
+    AMD,
+    BGN,
+    UAH,
+    DKK,
+    USD,
+    EUR,
+    PLN,
+    JPY,
+    IRR,
+    ISK,
+    CAD,
+    CNY,
+    KWD,
+    MDL,
+    NZD,
+    NOK,
+    RUB,
+    XDR,
+    SGD,
+    KGS,
+    KZT,
+    TRY,
+    GBP,
+    CZK,
+    SEK,
+    CHF
+}
